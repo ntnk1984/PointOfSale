@@ -1,0 +1,1 @@
+D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\PointOfSale.csproj;x64

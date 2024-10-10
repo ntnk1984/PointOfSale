@@ -1,0 +1,545 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Food</name>
+    </assembly>
+    <members>
+        <member name="F:PointOfSale.Data.Constants.ServiceUri">
+            <summary>
+            The base URI for the Datasync service.
+            </summary>
+        </member>
+        <member name="F:PointOfSale.Data.Constants.ApplicationId">
+            <summary>
+            The application (client) ID for the native app within Azure Active Directory
+            </summary>
+        </member>
+        <member name="F:PointOfSale.Data.Constants.Scopes">
+            <summary>
+            The list of scopes to request
+            </summary>
+        </member>
+        <member name="T:PointOfSale.Models.Item">
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Models.Item.Title">
+            <inheritdoc cref="F:PointOfSale.Models.Item.title"/>
+        </member>
+        <member name="P:PointOfSale.Models.Item.Quantity">
+            <inheritdoc cref="F:PointOfSale.Models.Item.quantity"/>
+        </member>
+        <member name="P:PointOfSale.Models.Item.Image">
+            <inheritdoc cref="F:PointOfSale.Models.Item.image"/>
+        </member>
+        <member name="P:PointOfSale.Models.Item.Price">
+            <inheritdoc cref="F:PointOfSale.Models.Item.price"/>
+        </member>
+        <member name="M:PointOfSale.Models.Item.OnQuantityChanged(System.Int32)">
+            <summary>Executes the logic for when <see cref="P:PointOfSale.Models.Item.Quantity"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:PointOfSale.Models.Item.Quantity"/> is changed.</remarks>
+        </member>
+        <member name="T:PointOfSale.Models.Order">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Models.Order.Table">
+            <inheritdoc cref="F:PointOfSale.Models.Order.table"/>
+        </member>
+        <member name="P:PointOfSale.Models.Order.SignatureData">
+            <inheritdoc cref="F:PointOfSale.Models.Order.signatureData"/>
+        </member>
+        <member name="P:PointOfSale.Models.Order.Tip">
+            <inheritdoc cref="F:PointOfSale.Models.Order.tip"/>
+        </member>
+        <member name="P:PointOfSale.Models.Order.Items">
+            <inheritdoc cref="F:PointOfSale.Models.Order.items"/>
+        </member>
+        <member name="P:PointOfSale.Models.Order.Status">
+            <inheritdoc cref="F:PointOfSale.Models.Order.status"/>
+        </member>
+        <member name="P:PointOfSale.Models.Order.OrderType">
+            <inheritdoc cref="F:PointOfSale.Models.Order.orderType"/>
+        </member>
+        <member name="F:PointOfSale.Models.Order.payCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Models.Order.PayCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Models.Order.PayCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Models.Order.Pay"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.DashboardViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:PointOfSale.Pages.DashboardViewModel.viewAllCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.DashboardViewModel.ViewAllCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.DashboardViewModel.ViewAllCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.DashboardViewModel.ViewAll"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.MobileLoginViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.MobileLoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.MobileLoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.MobileLoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.MobileLoginViewModel.Login"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.OrderDetailsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrderDetailsViewModel.Order">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrderDetailsViewModel.order"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrderDetailsViewModel.Added">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrderDetailsViewModel.added"/>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.OrderDetailsViewModel.payCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.OrderDetailsViewModel.PayCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrderDetailsViewModel.PayCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.OrderDetailsViewModel.Pay"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.OrdersViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrdersViewModel.Orders">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrdersViewModel._orders"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrdersViewModel.DisplayName">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrdersViewModel.displayName"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrdersViewModel.DisplayEmail">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrdersViewModel.displayEmail"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrdersViewModel.ProfilePhoto">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrdersViewModel.profilePhoto"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrdersViewModel.PageCurrentState">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.OrdersViewModel.pageCurrentState"/>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.OrdersViewModel.logOutCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.OrdersViewModel.LogOutCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.OrdersViewModel.LogOutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.OrdersViewModel.LogOut"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.PayViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.PayViewModel.Order">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.PayViewModel.order"/>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.PayViewModel.payCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.PayViewModel.PayCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.PayViewModel.PayCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.PayViewModel.Pay"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.ReceiptViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.ReceiptViewModel.Order">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.ReceiptViewModel.order"/>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.ReceiptViewModel.doneCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.ReceiptViewModel.DoneCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.ReceiptViewModel.DoneCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.ReceiptViewModel.Done"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.SignatureViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.SignatureViewModel.Order">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.SignatureViewModel.order"/>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.SignatureViewModel.doneCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.SignatureViewModel.DoneCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.SignatureViewModel.DoneCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.SignatureViewModel.Done"/>.</summary>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.SignatureViewModel.clearCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.SignatureViewModel.ClearCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.SignatureViewModel.ClearCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.SignatureViewModel.Clear"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Handheld.TipViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.TipViewModel.Order">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.TipViewModel.order"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.TipViewModel.Tip">
+            <inheritdoc cref="F:PointOfSale.Pages.Handheld.TipViewModel.tip"/>
+        </member>
+        <member name="M:PointOfSale.Pages.Handheld.TipViewModel.OnTipChanged(System.Double)">
+            <summary>Executes the logic for when <see cref="P:PointOfSale.Pages.Handheld.TipViewModel.Tip"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:PointOfSale.Pages.Handheld.TipViewModel.Tip"/> is changed.</remarks>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.TipViewModel.continueCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.TipViewModel.ContinueCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.TipViewModel.ContinueCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.TipViewModel.Continue"/>.</summary>
+        </member>
+        <member name="F:PointOfSale.Pages.Handheld.TipViewModel.addCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Handheld.TipViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Handheld.TipViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Handheld.TipViewModel.Add"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.HomeViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.HomeViewModel.Products">
+            <inheritdoc cref="F:PointOfSale.Pages.HomeViewModel._products"/>
+        </member>
+        <member name="P:PointOfSale.Pages.HomeViewModel.Category">
+            <inheritdoc cref="F:PointOfSale.Pages.HomeViewModel.category"/>
+        </member>
+        <member name="M:PointOfSale.Pages.HomeViewModel.OnCategoryChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:PointOfSale.Pages.HomeViewModel.Category"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:PointOfSale.Pages.HomeViewModel.Category"/> is changed.</remarks>
+        </member>
+        <member name="F:PointOfSale.Pages.HomeViewModel.preferencesCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.HomeViewModel.PreferencesCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.HomeViewModel.PreferencesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.HomeViewModel.Preferences"/>.</summary>
+        </member>
+        <member name="F:PointOfSale.Pages.HomeViewModel.addProductCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.HomeViewModel.AddProductCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.HomeViewModel.AddProductCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.HomeViewModel.AddProduct"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.SettingsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.SettingsViewModel.Products">
+            <inheritdoc cref="F:PointOfSale.Pages.SettingsViewModel._products"/>
+        </member>
+        <member name="F:PointOfSale.Pages.SettingsViewModel.notImplementedCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.SettingsViewModel.NotImplementedCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.SettingsViewModel.NotImplementedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.SettingsViewModel.NotImplemented"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.AddProductViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.Item">
+            <inheritdoc cref="F:PointOfSale.Pages.AddProductViewModel.item"/>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.Category">
+            <inheritdoc cref="F:PointOfSale.Pages.AddProductViewModel.category"/>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.ImagePath">
+            <inheritdoc cref="F:PointOfSale.Pages.AddProductViewModel.imagePath"/>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.Image">
+            <inheritdoc cref="F:PointOfSale.Pages.AddProductViewModel.image"/>
+        </member>
+        <member name="F:PointOfSale.Pages.AddProductViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.AddProductViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.AddProductViewModel.Save"/>.</summary>
+        </member>
+        <member name="F:PointOfSale.Pages.AddProductViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.AddProductViewModel.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.AddProductViewModel.Cancel"/>.</summary>
+        </member>
+        <member name="F:PointOfSale.Pages.AddProductViewModel.changeImageCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.AddProductViewModel.ChangeImageCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.AddProductViewModel.ChangeImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.AddProductViewModel.ChangeImage"/>.</summary>
+        </member>
+        <member name="T:PointOfSale.Pages.Views.OrderCartViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:PointOfSale.Pages.Views.OrderCartViewModel.Order">
+            <inheritdoc cref="F:PointOfSale.Pages.Views.OrderCartViewModel.order"/>
+        </member>
+        <member name="P:PointOfSale.Pages.Views.OrderCartViewModel.Items">
+            <inheritdoc cref="F:PointOfSale.Pages.Views.OrderCartViewModel.items"/>
+        </member>
+        <member name="F:PointOfSale.Pages.Views.OrderCartViewModel.placeOrderCommand">
+            <summary>The backing field for <see cref="P:PointOfSale.Pages.Views.OrderCartViewModel.PlaceOrderCommand"/>.</summary>
+        </member>
+        <member name="P:PointOfSale.Pages.Views.OrderCartViewModel.PlaceOrderCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:PointOfSale.Pages.Views.OrderCartViewModel.PlaceOrder"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Image">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Image" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Price">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Price" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Table">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Table" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SignatureData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SignatureData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tip">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tip" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Status">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Status" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OrderType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OrderType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Order">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Order" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Added">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Added" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DisplayName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DisplayName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DisplayEmail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DisplayEmail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProfilePhoto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProfilePhoto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PageCurrentState">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PageCurrentState" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Products">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Products" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Category">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Category" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Item">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Item" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImagePath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImagePath" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Quantity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Quantity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Image">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Image" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Price">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Price" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Table">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Table" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SignatureData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SignatureData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tip">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tip" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Status">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Status" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OrderType">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OrderType" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Order">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Order" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Added">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Added" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Orders">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Orders" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DisplayName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DisplayName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DisplayEmail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DisplayEmail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProfilePhoto">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProfilePhoto" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PageCurrentState">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PageCurrentState" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Products">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Products" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Category">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Category" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Item">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Item" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImagePath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImagePath" generated properties.</summary>
+        </member>
+    </members>
+</doc>

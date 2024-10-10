@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Food</id>
+    <version>1.0.0</version>
+    <authors>Food</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="1afb580b06f72ef39de2634fb774832aec353a3a" />
+    <dependencies>
+      <group targetFramework="net8.0-android34.0">
+        <dependency id="AlohaKit.Animations" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AsyncAwaitBestPractices" version="6.0.6" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Maui" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microcharts" version="0.9.5.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.61.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache.FileStore" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="Plugin.Maui.KeyListener" version="1.0.0-preview1" exclude="Build,Analyzers" />
+        <dependency id="Redth.ZXing.Net.Maui" version="0.1.0-preview.4" exclude="Build,Analyzers" />
+        <dependency id="Ril.BlazorSignatureCanvas" version="0.1.0-alpha" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp.Extended.UI.Maui" version="2.0.0-preview.92" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-ios17.0">
+        <dependency id="AlohaKit.Animations" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AsyncAwaitBestPractices" version="6.0.6" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Maui" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microcharts" version="0.9.5.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.61.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache.FileStore" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="Plugin.Maui.KeyListener" version="1.0.0-preview1" exclude="Build,Analyzers" />
+        <dependency id="Redth.ZXing.Net.Maui" version="0.1.0-preview.4" exclude="Build,Analyzers" />
+        <dependency id="Ril.BlazorSignatureCanvas" version="0.1.0-alpha" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp.Extended.UI.Maui" version="2.0.0-preview.92" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-maccatalyst17.0">
+        <dependency id="AlohaKit.Animations" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AsyncAwaitBestPractices" version="6.0.6" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Maui" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microcharts" version="0.9.5.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.61.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache.FileStore" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="Plugin.Maui.KeyListener" version="1.0.0-preview1" exclude="Build,Analyzers" />
+        <dependency id="Redth.ZXing.Net.Maui" version="0.1.0-preview.4" exclude="Build,Analyzers" />
+        <dependency id="Ril.BlazorSignatureCanvas" version="0.1.0-alpha" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp.Extended.UI.Maui" version="2.0.0-preview.92" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-windows10.0.19041">
+        <dependency id="AlohaKit.Animations" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AsyncAwaitBestPractices" version="6.0.6" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Maui" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microcharts" version="0.9.5.9" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Identity.Client" version="4.61.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.3" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="MonkeyCache.FileStore" version="2.0.0-beta" exclude="Build,Analyzers" />
+        <dependency id="Plugin.Maui.KeyListener" version="1.0.0-preview1" exclude="Build,Analyzers" />
+        <dependency id="Redth.ZXing.Net.Maui" version="0.1.0-preview.4" exclude="Build,Analyzers" />
+        <dependency id="Ril.BlazorSignatureCanvas" version="0.1.0-alpha" exclude="Build,Analyzers" />
+        <dependency id="SkiaSharp.Extended.UI.Maui" version="2.0.0-preview.92" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-android\Food.runtimeconfig.json" target="lib\net8.0-android34.0\Food.runtimeconfig.json" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-android\Food.dll" target="lib\net8.0-android34.0\Food.dll" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-android\Food.xml" target="lib\net8.0-android34.0\Food.xml" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-ios\iossimulator-x64\Food.runtimeconfig.json" target="lib\net8.0-ios17.0\Food.runtimeconfig.json" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-ios\iossimulator-x64\Food.dll" target="lib\net8.0-ios17.0\Food.dll" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Food.runtimeconfig.json" target="lib\net8.0-maccatalyst17.0\Food.runtimeconfig.json" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Food.dll" target="lib\net8.0-maccatalyst17.0\Food.dll" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Food.runtimeconfig.json" target="lib\net8.0-windows10.0.19041\Food.runtimeconfig.json" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Food.dll" target="lib\net8.0-windows10.0.19041\Food.dll" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net8.0-windows10.0.19041\resources.pri" />
+    <file src="C:\Users\Khang\.nuget\packages\ril.blazorsignaturecanvas\0.1.0-alpha\contentFiles\any\net6.0\wwwroot\BlazorSignatureCanvas.js" target="staticwebassets\BlazorSignatureCanvas.js" />
+    <file src="C:\Users\Khang\.nuget\packages\ril.blazorsignaturecanvas\0.1.0-alpha\contentFiles\any\net6.0\wwwroot\BlazorSignatureCanvas.js.map" target="staticwebassets\BlazorSignatureCanvas.js.map" />
+    <file src="C:\Users\Khang\.nuget\packages\ril.blazorsignaturecanvas\0.1.0-alpha\contentFiles\any\net6.0\wwwroot\background.png" target="staticwebassets\background.png" />
+    <file src="C:\Users\Khang\.nuget\packages\ril.blazorsignaturecanvas\0.1.0-alpha\contentFiles\any\net6.0\wwwroot\exampleJsInterop.js" target="staticwebassets\exampleJsInterop.js" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\app.css" target="staticwebassets\css\app.css" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\bootstrap\bootstrap.min.css" target="staticwebassets\css\bootstrap\bootstrap.min.css" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\bootstrap\bootstrap.min.css.map" target="staticwebassets\css\bootstrap\bootstrap.min.css.map" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\FONT-LICENSE" target="staticwebassets\css\open-iconic\FONT-LICENSE" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\ICON-LICENSE" target="staticwebassets\css\open-iconic\ICON-LICENSE" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\README.md" target="staticwebassets\css\open-iconic\README.md" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" target="staticwebassets\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\font\fonts\open-iconic.eot" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.eot" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\font\fonts\open-iconic.otf" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.otf" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\font\fonts\open-iconic.svg" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.svg" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.ttf" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\css\open-iconic\font\fonts\open-iconic.woff" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.woff" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\favicon.ico" target="staticwebassets\favicon.ico" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\wwwroot\index.html" target="staticwebassets\index.html" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\obj\Debug\net8.0-ios\iossimulator-x64\staticwebassets\msbuild.Food.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\obj\Debug\net8.0-ios\iossimulator-x64\staticwebassets\msbuild.build.Food.props" target="build\Food.props" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\obj\Debug\net8.0-ios\iossimulator-x64\staticwebassets\msbuild.buildMultiTargeting.Food.props" target="buildMultiTargeting\Food.props" />
+    <file src="D:\pkn\temp\maui-samples\8.0\Apps\PointOfSale\src\PointOfSale\obj\Debug\net8.0-ios\iossimulator-x64\staticwebassets\msbuild.buildTransitive.Food.props" target="buildTransitive\Food.props" />
+  </files>
+</package>

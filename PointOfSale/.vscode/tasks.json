@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build and Run .NET Android",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "build",
+          "-t:Run",
+          "-f",
+          "net8.0-android"
+        ],
+        "problemMatcher": "$msCompile",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "detail": "Builds and runs the .NET Android project targeting net8.0."
+      }
+    ]
+  }
+  

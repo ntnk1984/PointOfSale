@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\pkn\\temp\\maui-samples\\8.0\\Apps\\PointOfSale\\src\\PointOfSale.API\\PointOfSale.API.csproj": {}
+  },
+  "projects": {
+    "D:\\pkn\\temp\\maui-samples\\8.0\\Apps\\PointOfSale\\src\\PointOfSale.API\\PointOfSale.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\pkn\\temp\\maui-samples\\8.0\\Apps\\PointOfSale\\src\\PointOfSale.API\\PointOfSale.API.csproj",
+        "projectName": "PointOfSale.API",
+        "projectPath": "D:\\pkn\\temp\\maui-samples\\8.0\\Apps\\PointOfSale\\src\\PointOfSale.API\\PointOfSale.API.csproj",
+        "packagesPath": "C:\\Users\\Khang\\.nuget\\packages\\",
+        "outputPath": "D:\\pkn\\temp\\maui-samples\\8.0\\Apps\\PointOfSale\\src\\PointOfSale.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Khang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\6.3.0\\Nuget Package": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/YH1J2VkfdSKP94WS1CO9s2FkDtF9hjHfYpx6egq6YdILpIAiE2/api": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Datasync": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.AspNetCore.Datasync.EFCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[2.0.7-preview, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
