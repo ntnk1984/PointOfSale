@@ -41,6 +41,13 @@ xcrun simctl list
 
 dotnet build -t:Run -f net8.0-ios -p:_DeviceName=:v2:udid=<simulator-udid>
 
+## package
+
+.net maui
+.net maui Archive / Publish tool
+.NET MAUI - Apple Privacy Manifest editor
+View Code Behind
+
 
 ### Credits
 
