@@ -48,6 +48,7 @@ dotnet build -t:Run -f net8.0-ios -p:_DeviceName=:v2:udid=<simulator-udid>
 .NET MAUI - Apple Privacy Manifest editor
 View Code Behind
 
+.NET Meteor ==> Hot Reload (ok)
 
 ### Credits
 
